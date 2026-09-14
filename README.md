@@ -1,4 +1,4 @@
-# CLP Inspection Robot
+# CLP Inspection Robot Skills
 
 Operational documentation for controlling the CLP inspection robot and launcher system via SSH.
 
