@@ -10,7 +10,7 @@ last_updated: 2026-09-11
 
 1. **Start hardware scripts on remote launch platform:**
    ```bash
-   ssh ${CLP_LP_HOST:-dev@clp-lp.local.local} "cd ~/clp-inspection-robot-ros2; ./scripts/main.launchplatform.sh"
+   ssh ${CLP_LP_HOST:-dev@clp-lp.local} "cd ~/clp-inspection-robot-ros2; ./scripts/main.launchplatform.sh"
    ```
 
 2. **Start local ROS2 containers:**
@@ -32,8 +32,8 @@ last_updated: 2026-09-11
 
 2. **Stop hardware scripts on remote launch platform:**
    ```bash
-   ssh ${CLP_LP_HOST:-dev@clp-lp.local.local} "/home/linuxbrew/.linuxbrew/bin/socattui down"
-   ssh ${CLP_LP_HOST:-dev@clp-lp.local.local} "/usr/bin/tmux kill-server"
+   ssh ${CLP_LP_HOST:-dev@clp-lp.local} "/home/linuxbrew/.linuxbrew/bin/socattui down"
+   ssh ${CLP_LP_HOST:-dev@clp-lp.local} "/usr/bin/tmux kill-server"
    ```
 
 3. **Verify shutdown:**

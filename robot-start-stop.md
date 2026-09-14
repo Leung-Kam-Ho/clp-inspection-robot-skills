@@ -10,7 +10,7 @@ last_updated: 2026-09-11
 
 1. **Start hardware scripts on remote robot:**
    ```bash
-   ssh ${CLP_IR_HOST:-dev@clp-ir.local.locall} "cd ~/clp-inspection-robot-ros2; ./scripts/main.robot.sh"
+   ssh ${CLP_IR_HOST:-dev@clp-ir.local} "cd ~/clp-inspection-robot-ros2; ./scripts/main.robot.sh"
    ```
 
 2. **Start local ROS2 containers:**
@@ -32,8 +32,8 @@ last_updated: 2026-09-11
 
 2. **Stop hardware scripts on remote robot:**
    ```bash
-   ssh ${CLP_IR_HOST:-dev@clp-ir.local.locall} "/home/linuxbrew/.linuxbrew/bin/socattui down"
-   ssh ${CLP_IR_HOST:-dev@clp-ir.local.locall} "/usr/bin/tmux kill-server"
+   ssh ${CLP_IR_HOST:-dev@clp-ir.local} "/home/linuxbrew/.linuxbrew/bin/socattui down"
+   ssh ${CLP_IR_HOST:-dev@clp-ir.local} "/usr/bin/tmux kill-server"
    ```
 
 3. **Verify shutdown:**

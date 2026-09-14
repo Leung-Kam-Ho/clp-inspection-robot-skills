@@ -38,7 +38,7 @@ last_updated: 2026-09-14
 
 2. **Stop all tmux sessions (camera + audio):**
    ```bash
-   ssh -o ConnectTimeout=2 ${CLP_DEV_HOST:-dev@development-mac-m1.local} "tmux kill-server"
+   ssh -o ConnectTimeout=2 ${CLP_DEV_HOST:-dev@development-mac-m1.local} "export PATH=$PATH:/opt/homebrew/bin && tmux kill-server"
    ```
 
 3. **Stop Docker containers:**

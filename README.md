@@ -7,8 +7,8 @@ Operational documentation for controlling the CLP inspection robot and launcher 
 | Component | Host | Description |
 |-----------|------|-------------|
 | Dev Mac | `${CLP_DEV_HOST:-dev@development-mac-m1.local}` | ROS2 API server, Docker containers, web server |
-| Robot | `${CLP_IR_HOST:-dev@clp-ir.local.locall}` | Robot hardware (servo, relay, pressure, LED) |
-| Launcher | `${CLP_LP_HOST:-dev@clp-lp.local.local}` | Launcher hardware (angle, relay, brake, laser) |
+| Robot | `${CLP_IR_HOST:-dev@clp-ir.local}` | Robot hardware (servo, relay, pressure, LED) |
+| Launcher | `${CLP_LP_HOST:-dev@clp-lp.local}` | Launcher hardware (angle, relay, brake, laser) |
 
 ## Quick Start
 
@@ -17,8 +17,8 @@ Operational documentation for controlling the CLP inspection robot and launcher 
 **Always ping all machines first** to check which are powered on:
 
 ```bash
-ping -c 2 -W 2 ${CLP_IR_HOST:-dev@clp-ir.local.locall}
-ping -c 2 -W 2 ${CLP_LP_HOST:-dev@clp-lp.local.local}
+ping -c 2 -W 2 ${CLP_IR_HOST:-dev@clp-ir.local}
+ping -c 2 -W 2 ${CLP_LP_HOST:-dev@clp-lp.local}
 ping -c 2 -W 2 ${CLP_DEV_HOST:-dev@development-mac-m1.local}
 ```
 
