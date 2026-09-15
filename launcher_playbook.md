@@ -35,4 +35,3 @@ ssh ${CLP_DEV_HOST:-dev@development-mac-m1.local} "curl -s http://localhost:5001
 
 - **[Launcher Relay Control](launcher-relay-control.md)** — Relay string format, bit functions, lock/unlock, brake operations
 - **[Launcher Positioning](launcher-positioning.md)** — Slot-to-angle mapping, setpoint tolerance, reset
-- **[Launcher Start/Stop](launcher-start-stop.md)** — Start and stop launcher (hardware + Docker)
